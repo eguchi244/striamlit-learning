@@ -31,7 +31,7 @@ if os.path.exists(filename):
     st.write("### 2. CSVテーブル")
     # 2.1 データ編集部, st.data_editor(対象データ, 表示件数)
     data = pd.read_csv(filename)
-    edited_data = st.data_editor(data, num_rows=10)
+    edited_data = st.data_editor(data, num_rows="dynamic")
 
     #
     if st.button('CSVを保存する'):
